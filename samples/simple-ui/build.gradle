@@ -1,7 +1,7 @@
 buildscript {
-	ext {
-		springBootVersion = "1.5.2.RELEASE"
-	}
+//	ext {
+//		springBootVersion = "1.5.2.RELEASE"
+//	}
 	repositories {
 		mavenCentral()
 	}
@@ -25,7 +25,7 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-devtools")
 	    
 	compile("net.simpledynamics:openid-connect-server-spring-boot-config:0.1.4-SNAPSHOT")
-	compile ('org.mitre:openid-connect-server:1.3.0')
+	compile ("org.mitre:openid-connect-server:${openIdConnectVersion}")
 
 	compile("org.webjars:jquery:3.1.1")
 	compile("org.webjars:bootstrap:3.3.7")
